@@ -1,0 +1,160 @@
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+header {
+    background-color: #8599b3;
+    color: white;
+    display: flex;
+    text-align: right;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+main {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap
+}
+
+
+
+.photo {
+    flex: 1 1 200px;
+    padding: 0 1rem;
+    max-width: 250px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+.header-content {
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+}
+.submenu-content {
+    display: none;
+    position: absolute; /* so it appears below the text */
+    background-color: #4aa1e8;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.sub-menu {
+
+    font-style: italic;
+    color: #666;
+}
+.sub-menu:hover .submenu-content {
+    display: block;
+}
+.io {
+    flex-basis: 100%;
+    margin-top: 1rem;
+}
+
+
+.program_lang {
+    flex-basis: 100%;
+    margin-top: 1rem;
+}
+
+.lang li {
+    padding: 0.25rem 0;
+}
+
+
+.project {
+    flex-basis: 100%;
+    margin-top: 1rem;
+}
+
+.proj li {
+    padding: 0.25rem 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #666;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #8599b3;
+    color: white;
+}
+
+
+footer {
+    background-color: #8599b3;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .photo {
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+}
+
+
