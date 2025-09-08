@@ -19,6 +19,12 @@ body {
     margin: 0;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
 
 header {
     background-color: #8599b3;
